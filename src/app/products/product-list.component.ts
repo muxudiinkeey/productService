@@ -6,7 +6,12 @@ import { IProduct } from './product';
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent {
- product:IProduct []= [
+  title = 'product-list';
+  imageWidth = 50;
+  imageMargin = 2;
+  showImage = false;
+
+ products:IProduct []= [
   {
     "productId": 1,
     "productName": "Leaf Rake",
@@ -59,4 +64,8 @@ export class ProductListComponent {
   }
 
  ]
+
+ toggleImage(): void {
+  this.showImage = !this.showImage;
+}
 }
