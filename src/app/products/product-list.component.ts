@@ -6,7 +6,7 @@ import { IProduct } from './product';
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent {
-  title = 'product-list';
+  title = 'product-list-data-conection';
   imageWidth = 50;
   imageMargin = 2;
   showImage = false;
