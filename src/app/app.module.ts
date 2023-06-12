@@ -11,6 +11,7 @@ import { FooterComponent } from './footer/footer.component';
 import { WelcomeComponent } from './homme/welcome/welcome.component';
 import { ProductListComponent } from './products/product-list.component';
 import { ProductDetailComponent } from './products/product-detail.component';
+import { SharedModule } from './shared/shared.module';
 
 
 @NgModule({
@@ -21,13 +22,14 @@ import { ProductDetailComponent } from './products/product-detail.component';
     FooterComponent,
     WelcomeComponent,
     ProductListComponent,
-    ProductDetailComponent
+    ProductDetailComponent,
 
   ],
   imports: [
 
   BrowserModule,
   AppRoutingModule,
+  SharedModule
 
   ],
   providers: [],
