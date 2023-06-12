@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserComponent } from './user/user.component';
@@ -11,7 +11,7 @@ import { FooterComponent } from './footer/footer.component';
 import { WelcomeComponent } from './homme/welcome/welcome.component';
 import { ProductListComponent } from './products/product-list.component';
 import { ProductDetailComponent } from './products/product-detail.component';
-import { SharedModule } from './shared/shared.module';
+import { ConverToSpacePipe } from './shared/conver-to-space.pipe';
 
 
 @NgModule({
@@ -23,13 +23,14 @@ import { SharedModule } from './shared/shared.module';
     WelcomeComponent,
     ProductListComponent,
     ProductDetailComponent,
+    ConverToSpacePipe
 
   ],
   imports: [
 
   BrowserModule,
   AppRoutingModule,
-  SharedModule
+  FormsModule
 
   ],
   providers: [],
